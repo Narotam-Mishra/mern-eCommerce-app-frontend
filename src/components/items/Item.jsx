@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import './Item.css'
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom'
 
 const Item = (props) => {
@@ -18,5 +18,13 @@ const Item = (props) => {
     </div>
   )
 }
+
+Item.propTypes = {
+  id: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  new_price: PropTypes.number.isRequired, // Assuming 'new_price' is a number, adjust as needed
+  old_price: PropTypes.number.isRequired, // Assuming 'old_price' is a number, adjust as needed
+};
 
 export default Item
