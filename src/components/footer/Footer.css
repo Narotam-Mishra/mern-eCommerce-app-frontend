@@ -94,3 +94,10 @@
         font-size: 13px;
     }
 }
+
+@media (max-width: 500px) {
+    .footer-logo p{
+        margin-top: 3rem;
+        font-size: 21px;
+    }
+}
