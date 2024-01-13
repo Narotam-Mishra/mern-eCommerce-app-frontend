@@ -43,7 +43,7 @@ const ShopContextProvider = (props) => {
         return totalAmount;
     }
 
-    // function to calculate total amount of cart items
+    // function to calculate total count of cart items
     const getTotalCartItems = () => {
         let totalItems = 0;
         for(const item in cartItems)
